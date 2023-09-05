@@ -11,7 +11,7 @@ class AllTheBooks extends Component {
           {books.map((book) => (
             <Col className="col-12 col-sm-6 col-md-4 col-lg-3 gy-4" key={`book-${book.asin}`}>
               <Card>
-                <Card.Img variant="top" style={{ height: "350px", objectFit: "container" }} src={book.img} />
+                <Card.Img variant="top" style={{ height: "350px", objectFit: "contain" }} src={book.img} />
                 <Card.Body>
                   <Card.Title className="text-truncate">{book.title}</Card.Title>
                   <Card.Text>{book.price}$</Card.Text>
